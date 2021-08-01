@@ -1,0 +1,93 @@
+#logo {
+  height: 10%;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3.6s;
+}
+
+#path-1-outside-1 {
+  animation: fill 0.5s ease forwards 3.5s;
+}
+
+#L1 {
+  stroke-dasharray: 572px;
+  stroke-dashoffset: 572px;
+  animation: line-anim 2s ease forwards;
+}
+
+#L1:hover,
+#L2:hover,
+#L3:hover,
+#L4:hover,
+#L5:hover,
+#L6:hover,
+#L7:hover,
+#L8:hover {
+  stroke: rgb(116, 43, 43);
+  fill: rgb(116, 43, 43);
+  transform: translateY(5px);
+}
+
+#L2 {
+  stroke-dasharray: 464px;
+  stroke-dashoffset: 464px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+#L3 {
+  stroke-dasharray: 494px;
+  stroke-dashoffset: 494px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+#L4 {
+  stroke-dasharray: 278px;
+  stroke-dashoffset: 278px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+#L5 {
+  stroke-dasharray: 636px;
+  stroke-dashoffset: 636px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+#L6 {
+  stroke-dasharray: 604.5px;
+  stroke-dashoffset: 604.5;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+#L7 {
+  stroke-dasharray: 464px;
+  stroke-dashoffset: 464px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+#L8 {
+  stroke-dasharray: 549px;
+  stroke-dashoffset: 549px;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    padding: 2%;
+    background-color: #e99c70;
+    fill: #115097;
+  }
+}
